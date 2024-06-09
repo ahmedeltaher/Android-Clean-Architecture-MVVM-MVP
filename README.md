@@ -9,7 +9,7 @@ You can also check [**MVP**](https://github.com/ahmedeltaher/Android-MVP-Archite
 
 **Why Promoting MVVM VS MVP:**
 - ViewModel has Built in LifeCycleOwerness, on the other hand Presenter not, and you have to take this responsiblty in your side.
-- ViewModel doesn't have a reference for View, on the other hand Presenter still hold a reference for view, even if you made it as weakreference.
+- ViewModel doesn't have a reference for View, on the other hand Presenter still hold a reference for view, even if you made it as weak reference.
 - ViewModel survive configuration changes, while it is your own responsiblities to survive the configuration changes in case of Presenter. (Saving and restoring the UI state)
 
 **MVVM Best Pratice:**
@@ -26,7 +26,7 @@ You can also check [**MVP**](https://github.com/ahmedeltaher/Android-MVP-Archite
 -------------------
 
  **Coroutines :**
-Is light wight threads for asynchronous programming, Coroutines not only open the doors to
+Is light weight threads for asynchronous programming, Coroutines not only open the doors to
 asynchronous programming, but also provide a wealth of other possibilities such as concurrency, actors, etc.
 
 ----------
@@ -34,7 +34,7 @@ asynchronous programming, but also provide a wealth of other possibilities such 
 **Coroutines VS RXJava**
 -------------------
 They're different tools with different strengths. Like a tank and a cannon, they have a lot of overlap but are more or less desirable under different circumstances.
-        - Coroutines Is light wight threads for asynchronous programming.
+        - Coroutines Is light weight threads for asynchronous programming.
         - RX-Kotlin/RX-Java is functional reactive programming, its core pattern relay on
         observer design pattern, so you can use it to handle user interaction with UI while you
         still using coroutines as main core for background work.
@@ -50,7 +50,7 @@ They're different tools with different strengths. Like a tank and a cannon, they
  , database , any background processes , sure you can use RX in such cases too, but it looks like
   you use a tank to kill ant.*
  - RX-Kotlin : *When you would to handle stream of UI actions like : user scrolling , clicks ,
- update UI upon some events .....ect .*
+ update UI upon some events .....etc .*
 
 
 **What is the Coroutines benefits?**
@@ -115,8 +115,8 @@ They're different tools with different strengths. Like a tank and a cannon, they
 
 **Keep your code clean according to MVVM**
 -----------------------------
- - Yes , liveData is easy , powerful , but you should know how to use.
- - For livedate which will emit data stream , it has to be in your
+ - Yes , liveData is easy , powerful , but you should know how to use it.
+ - For livedata which will emit data stream , it has to be in your
    data layer , and don't inform those observables any thing else like
    in which thread those will consume , cause it is another
  - For livedata which will emit UI binding events, it has to be in your ViewModel Layer.
